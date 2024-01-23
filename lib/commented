@@ -1,0 +1,63 @@
+Mapped list of id and Values
+
+ Map<String, List<UserContent>> mappedContent = {};
+
+    for (var element in contentList) {
+      if (!mappedContent
+          .containsKey(element.userMilestoneDocument.milestoneDocument.id)) {
+        mappedContent[element.userMilestoneDocument.milestoneDocument.id] = [];
+      }
+      mappedContent[element.userMilestoneDocument.milestoneDocument.id]!
+          .add(element);
+    }
+
+
+
+
+
+
+
+
+
+
+
+//  List<dynamic> jsonList = jsonDecode(jsonData);
+  // print(jsonList[1]);
+
+  //  Map<String,dynamic> content1 = jsonList[1];
+  //print(content1['user_content']);
+  // List<UserContent> userContentsList = [];
+  // for (int i = 0; i < jsonList.length; i++) {
+  //   UserContent user = UserContent.fromJson(jsonList[i]['user_content']);
+  //   userContentsList.add(user);
+  // }
+  // var sortedList =userContentsList.map((e) => DateTime.parse(e.user_milestone_document!.milestone_document.start_date!));
+  //sortedList.sort((a,b) => a.compareTo(b));
+  // userContentsList.sort((a, b) =>
+  //     DateTime.parse(a.user_milestone_document!.milestone_document.start_date!)
+  //         .compareTo(DateTime.parse(
+  //             b.user_milestone_document!.milestone_document.start_date!)));
+
+  // print(userContentsList);
+  // print((userContentsList[1]
+  //     .user_milestone_document
+  //     ?.milestone_document
+  //     .start_date));
+
+  //print("==============");
+ // print("=================");
+  // print(jsonList[1]);
+  //print(user.content_document);
+
+  // ContentResultList userContent1 = ContentResultList.fromJson(jsonData);
+  //  print(userContent1);
+
+  //print(userContent1.id);
+
+  // Convert each map to a UserContent object
+
+//print(jsonList.map((element) {UserContent.fromJson(element['user_content']);}));
+  //print(jsonList);
+  //  List<UserContent> userContentList =
+  //  jsonList.map((item) => UserContent.fromJson(item['user_content'])).toList();
+  //print(userContentList[0].user_milestone_document?.milestone_document.id);
